@@ -33,10 +33,12 @@
 }
 
 ::selection {
+  color: var(--bg);
   background: red;
 }
 
 ::-moz-selection {
+  color: var(--bg);
   background: red;
 }
 
@@ -217,16 +219,16 @@ li {
 
 h1 {
   font-size: var(--font-size-h1);
-  margin: 0 0 12px;
+  margin: 0 0 1.5rem;
 }
 
 h2 {
   font-size: var(--font-size-h2);
-  margin: 0 0 12px;
+  margin: 0 0 1.5rem;
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 0.8rem;
 }
 
 .contrast-text {

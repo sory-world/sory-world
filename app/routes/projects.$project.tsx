@@ -73,7 +73,10 @@ export default function ProjectPage() {
           </p>
         </div>
         {project.image && (
-          <img
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
             src={project.image}
             alt={project.title}
             className="project-image"

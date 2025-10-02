@@ -2,7 +2,7 @@ import { PageData } from "~/types";
 import { getPageDataBySlug } from "./getPageDataBySlug";
 
 type ProjectData = PageData & {
-  date: string;
+  date?: string;
   image?: string;
 };
 
@@ -66,7 +66,7 @@ export const projects: Record<string, ProjectData> = {
       "noise performance at Tom Hardwick-Allan's exhibition Scrying the Slice, to which sory.world contributed a text by Lucy, read by Georgie Edmonds.",
     ],
     date: "2022",
-    image: "/public/projects/stsc.jpg",
+    image: "/public/projects/sts.png",
   },
   yonner: {
     slug: "yonner",
@@ -83,50 +83,62 @@ export const projects: Record<string, ProjectData> = {
     description: [" documentary about the making of Alien Intimacy."],
     date: "Ioannis Papadakis 2022",
   },
+  "take-ur-hand": {
+    slug: "take-ur-hand",
+    title: "take **ur hand",
+    description: ["music video for sewage, directed by r seventeen."],
+    date: "2022",
+    image: "/public/projects/tyh.png",
+  },
   untitled: {
     slug: "untitled",
     title: "untitled",
-    description: ["documentary about the making of Alien Intimacy."],
-    date: "Ioannis Papadakis 2022",
-    image: "/public/projects/utld.jpg",
+    description: [
+      "driftings of a metal box. The first collaboration between R Seventeen and Lucy.",
+    ],
+    date: "2015",
+    image: "/public/projects/utld.png",
   },
   "alien-intimacy": {
     slug: "alien-intimacy",
     title: "alien intimacy",
-    description: ["placeholder."],
-    date: "Ioannis Papadakis 2022",
+    description: [
+      "zanya leaves a life behind to sleep beneath the sleepless screen of an abandoned cinema. the film was made throughout a bitter winter and bright spring in belgrade, during which the filmmakers, an army of waifs and strays, lived in the cinema where it is set. this was our film school. it's not finished yet. we lost our minds and broke our hearts making it. it was, is, a labour of love. alien intimacy established, both positively and negatively, the place from which our visions occur and the techniques by which we put them into practice. in all our subsequent work we are still there, in that haunted, freezing theatre, staring down the blank face of the screen and listening to the snowflakes falling onto the seats. we would love for you to join us.",
+    ],
+    date: "IN DEVELOPMENT",
   },
   Ω: {
     slug: "Ω",
     title: "Ω",
-    description: ["placeholder."],
-    date: "Ioannis Papadakis 2022",
-    image: "/public/projects/Ω.jpg",
+    description: [
+      "Y is an androgynous humanoid apparently being preserved in a depthless white, virtual space. Frank is an aging man who monitors them from another room. Y dreams of an empty Venice. Frank narrates these dreams. it seems that Frank and Y are the last people left on earth, except for a mysterious figure that begins appearing in Y's dreams.",
+    ],
+    date: "IN DEVELOPMENT",
+    image: "/public/projects/Ω.png",
   },
   nhs: {
     slug: "nhs",
     title: "nhs",
-    description: ["placeholder."],
-    date: "Ioannis Papadakis 2022",
+    description: ["IN DEVELOPMENT"],
   },
   deadlunds: {
     slug: "deadlunds",
     title: "deadlunds",
-    description: ["placeholder."],
-    date: "Ioannis Papadakis 2022",
+    description: [
+      "the poet Leighton Redman returns to his homeland for inspiration and to see his parents. he finds neither.",
+    ],
+    date: "IN DEVELOPMENT",
     image: "/public/projects/dl.png",
   },
   "in-the-night-darkly": {
     slug: "in-the-night-darkly",
     title: "in the night darkly",
-    description: ["placeholder."],
-    date: "Ioannis Papadakis 2022",
+    description: ["IN DEVELOPMENT"],
   },
   "no-country": {
     slug: "no-country",
     title: "no country",
-    description: ["placeholder."],
-    date: "Ioannis Papadakis 2022",
+    description: ["IN DEVELOPMENT"],
   },
 };
 
