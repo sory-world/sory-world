@@ -1,0 +1,34 @@
+{
+  "name": "sory-world",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "remix vite:dev",
+    "build": "remix vite:build",
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc -b",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "dependencies": {
+    "@remix-run/node": "^2.17.1",
+    "@remix-run/react": "^2.17.1",
+    "framer-motion": "^12.23.22",
+    "isbot": "^4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@netlify/remix-adapter": "^2.6.1",
+    "@remix-run/dev": "^2.17.1",
+    "@remix-run/serve": "^2.17.1",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.9.2",
+    "vite": "^6.3.6"
+  }
+}
