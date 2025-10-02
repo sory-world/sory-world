@@ -60,7 +60,7 @@ function DesktopNav({ data }: { data: NavData }) {
   useEffect(() => {
     if (!open) return;
     const id = requestAnimationFrame(() => {
-      panelRef.current?.querySelector<HTMLElement>("a[href]")?.focus();
+      panelRef.current?.focus();
     });
     return () => cancelAnimationFrame(id);
   }, [open]);
@@ -170,6 +170,7 @@ function DesktopNav({ data }: { data: NavData }) {
             animate="animate"
             exit="exit"
             layout
+            tabIndex={-1}
           >
             {groups[open]?.map((link) => (
               <motion.div

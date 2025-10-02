@@ -52,10 +52,16 @@ export default function ProjectPage() {
             back
           </button>
         </div>
-        <h2>{note.title}</h2>
+        <h2>
+          <span className="contrast-text contrast-text--tight">
+            {note.title}
+          </span>
+        </h2>
         <div>
-          {note.description.map((paragraph) => (
-            <p key={paragraph.slice(0, 15)}>{paragraph}</p>
+          {note.description.map((paragraph, index) => (
+            <p key={`${note.slug}-paragraph-${index}`}>
+              <span className="contrast-text">{paragraph}</span>
+            </p>
           ))}
         </div>
       </motion.div>

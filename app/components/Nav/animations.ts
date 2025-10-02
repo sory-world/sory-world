@@ -14,7 +14,7 @@ export function useDesktopPanelVariants(): Variants {
     animate: {
       clipPath: "inset(0 0% 0 0 round 8px)",
       transition: {
-        duration: 0.28,
+        duration: 0.26,
         ease: [0.22, 1, 0.36, 1],
         when: "beforeChildren",
         staggerChildren: 0.05,
@@ -66,7 +66,7 @@ export function useMobilePanelVariants(): Variants {
       height: 0,
       opacity: 0,
       transition: {
-        duration: 0.18,
+        duration: 0.8,
         ease: [0.4, 0, 0.2, 1],
         when: "afterChildren",
       },
@@ -75,7 +75,7 @@ export function useMobilePanelVariants(): Variants {
       height: "auto",
       opacity: 1,
       transition: {
-        duration: 0.22,
+        duration: 0.8,
         ease: [0.22, 1, 0.36, 1],
       },
     },
@@ -99,8 +99,8 @@ export function useMobileListVariants(): Variants {
     },
     expanded: {
       transition: {
-        delayChildren: 0.04,
-        staggerChildren: 0.08,
+        delayChildren: 0,
+        staggerChildren: 0.04,
       },
     },
   };

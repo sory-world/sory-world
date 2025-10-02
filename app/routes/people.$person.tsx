@@ -59,7 +59,7 @@ export default function ProjectPage() {
           ))}
         </div>
         {person.links?.map((link) => (
-          <Link className="body__link" key={link.name} to={link.to}>
+          <Link className="body__link" key={link.name} to={link.to} target="_blank">
             {link.name}
           </Link>
         ))}

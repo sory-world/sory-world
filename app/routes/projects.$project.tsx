@@ -46,24 +46,39 @@ export default function ProjectPage() {
 
   return (
     <div className="home">
-      <motion.div animate={controls} initial={{ opacity: 0 }}>
+      <motion.div
+        animate={controls}
+        initial={{ opacity: 0 }}
+        className="project__content"
+      >
         <div className="page__bar">
           <button className="nav__link" onClick={handleBack}>
-            back
+            <span className="contrast-text">back</span>
           </button>
         </div>
-        <h2>{project.title}</h2>
+        <h2>
+          <span className="contrast-text">{project.title}</span>
+        </h2>
         <div>
-          {project.description.map((paragraph) => (
-            <p key={paragraph.slice(0, 15)}>{paragraph}</p>
+          {project.description.map((paragraph, index) => (
+            <p key={`${project.slug}-paragraph-${index}`}>
+              <span className="contrast-text">{paragraph}</span>
+            </p>
           ))}
         </div>
         <br />
         <div>
           <p>
-            <b>{project.date}</b>
+            <span className="contrast-text">{project.date}</span>
           </p>
         </div>
+        {project.image && (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="project-image"
+          />
+        )}
       </motion.div>
     </div>
   );
