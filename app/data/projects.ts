@@ -14,14 +14,14 @@ export const projects: Record<string, ProjectData> = {
       "queer, post-romantic, low energy sci-fi film where two lovers try to connect in an underwater city.",
     ],
     date: "2023",
-    image: "/public/ebnh.jpg",
+    image: "/ebnh.jpg",
   },
   "one-night-on-saturn": {
     slug: "one-night-on-saturn",
     title: "one night on saturn",
     description: ["two boys come down beside the river."],
     date: "2019 / 2024",
-    image: "/public/onos.jpg",
+    image: "/onos.jpg",
   },
   "looking-for-albion-remastered": {
     slug: "looking-for-albion-remastered",
@@ -30,7 +30,7 @@ export const projects: Record<string, ProjectData> = {
       "post-rave, post-brexit, post-internet hyperscape in which two boys, sharing a suit made from torn up, WW2 era British flags, slip in and out of reality in the search for a perfectly square, perfectly green field.",
     ],
     date: "2025",
-    image: "/public/l4ar.jpg",
+    image: "/l4ar.jpg",
   },
   "looking-for-albion": {
     slug: "looking-for-albion",
@@ -39,7 +39,7 @@ export const projects: Record<string, ProjectData> = {
       "post-rave, post-brexit, post-internet hyperscape in which two boys, sharing a suit made from torn up, WW2 era British flags, slip in and out of reality in the search for a perfectly square, perfectly green field.",
     ],
     date: "2018",
-    image: "/public/l4a.jpg",
+    image: "/l4a.jpg",
   },
   "young-boy-dancing-group": {
     slug: "young-boy-dancing-group",
@@ -48,7 +48,7 @@ export const projects: Record<string, ProjectData> = {
       "collaboration with Young Boy Dancing Group and Evita Manji.",
     ],
     date: "2023",
-    image: "/public/ybdg.png",
+    image: "/ybdg.png",
   },
   "stones-in-hand": {
     slug: "stones-in-hand",
@@ -57,7 +57,7 @@ export const projects: Record<string, ProjectData> = {
       "new Palestinian short film “Stones in hand” directed by Mo'min Swaitat. it is a surreal short film which draws on the artist's experiences as a Palestinian Bedouin who moved from the West Bank to London and their memories of a childhood spent between weddings and intifadas (popular uprisings).",
     ],
     date: "Mo'min Swaitat 2021",
-    image: "/public/sih.jpg",
+    image: "/sih.jpg",
   },
   "slicing-the-scry": {
     slug: "slicing-the-scry",
@@ -66,7 +66,7 @@ export const projects: Record<string, ProjectData> = {
       "noise performance at Tom Hardwick-Allan's exhibition Scrying the Slice, to which sory.world contributed a text by Lucy, read by Georgie Edmonds.",
     ],
     date: "2022",
-    image: "/public/sts.png",
+    image: "/sts.png",
   },
   yonner: {
     slug: "yonner",
@@ -75,7 +75,7 @@ export const projects: Record<string, ProjectData> = {
       "with work shut and the city quiet, Ben's decided to go home. made in conjunction with Foreign Body Productions and the Albany in Deptford, as part of their ongoing Open Source Collaborations project.",
     ],
     date: "2021",
-    image: "/public/ynr.png",
+    image: "/ynr.png",
   },
   zvezda: {
     slug: "zvezda",
@@ -88,7 +88,7 @@ export const projects: Record<string, ProjectData> = {
     title: "take **ur hand",
     description: ["music video for sewage, directed by r seventeen."],
     date: "2022",
-    image: "/public/tyh.png",
+    image: "/tyh.png",
   },
   untitled: {
     slug: "untitled",
@@ -97,7 +97,7 @@ export const projects: Record<string, ProjectData> = {
       "driftings of a metal box. The first collaboration between R Seventeen and Lucy.",
     ],
     date: "2015",
-    image: "/public/utld.png",
+    image: "/utld.png",
   },
   "alien-intimacy": {
     slug: "alien-intimacy",
@@ -114,7 +114,7 @@ export const projects: Record<string, ProjectData> = {
       "Y is an androgynous humanoid apparently being preserved in a depthless white, virtual space. Frank is an aging man who monitors them from another room. Y dreams of an empty Venice. Frank narrates these dreams. it seems that Frank and Y are the last people left on earth, except for a mysterious figure that begins appearing in Y's dreams.",
     ],
     date: "IN DEVELOPMENT",
-    image: "/public/Ω.png",
+    image: "/Ω.png",
   },
   nhs: {
     slug: "nhs",
@@ -128,7 +128,7 @@ export const projects: Record<string, ProjectData> = {
       "the poet Leighton Redman returns to his homeland for inspiration and to see his parents. he finds neither.",
     ],
     date: "IN DEVELOPMENT",
-    image: "/public/dl.png",
+    image: "/dl.png",
   },
   "in-the-night-darkly": {
     slug: "in-the-night-darkly",

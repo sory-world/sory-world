@@ -7,20 +7,16 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "build:cloudflare": "react-router build && cp -r build/client/* dist/",
-    "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pages:build": "react-router build",
-    "pages:preview": "wrangler pages dev dist"
+    "pages:preview": "wrangler pages dev build/client"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.17.1",
   "dependencies": {
-    "@react-router/node": "^7.9.3",
-    "@react-router/serve": "^7.9.3",
     "framer-motion": "^12.23.22",
     "isbot": "^4",
     "react": "^18.3.1",
@@ -29,8 +25,6 @@
     "react-router-dom": "^7.9.3"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20251001.0",
-    "@netlify/vite-plugin-react-router": "^1.0.1",
     "@react-router/dev": "^7.9.3",
     "@types/react": "^18.3.0",
     "typescript": "^5.9.2",

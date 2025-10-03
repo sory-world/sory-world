@@ -1,6 +1,6 @@
 # sory.world
 
-sory.world website.
+sory.world website
 
 ## Prerequisites
 
@@ -20,7 +20,6 @@ sory.world website.
 ## Setup
 
 1. Install project dependencies with `pnpm install`.
-2. Generate typed route helpers (required after adding or renaming routes) with `pnpm react-router typegen`.
-3. Start the development server with `pnpm dev`.
-4. Build for production with `pnpm build` (outputs to `build/client` and `build/server`).
-5. Serve the production build locally with `pnpm start`.
+2. Start the development server with `pnpm dev`.
+3. Build for production with `pnpm build` (outputs to `build/client` and `build/server`).
+4. Serve the production build locally with `pnpm start`.

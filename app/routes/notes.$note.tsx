@@ -13,14 +13,14 @@ export const loader = async ({ params }: Route.LoaderArgs) => {
   return note;
 };
 
-export const meta: Route.MetaFunction = ({ data }) => {
-  if (!data) {
-    return [{ title: "Project not found" }];
+export const meta: Route.MetaFunction = ({ loaderData }) => {
+  if (!loaderData) {
+    return [{ title: "Not found" }];
   }
 
   return [
-    { title: `${data.title}: sory.world` },
-    { name: "description", content: data.title },
+    { title: `${loaderData.title}: sory.world` },
+    { name: "description", content: loaderData.title },
   ];
 };
 
@@ -51,11 +51,7 @@ export default function ProjectPage() {
         <div className="page__bar">
           <BackButton handleBack={handleBack} />
         </div>
-        <h2>
-          <span className="contrast-text contrast-text--tight">
-            {note.title}
-          </span>
-        </h2>
+        <h2>{note.title}</h2>
         <div>
           {note.description.map((paragraph: string, index: number) => (
             <p key={`${note.slug}-paragraph-${index}`}>

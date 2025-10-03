@@ -13,14 +13,14 @@ export const loader = async ({ params }: Route.LoaderArgs) => {
   return project;
 };
 
-export const meta: Route.MetaFunction = ({ data }) => {
-  if (!data) {
-    return [{ title: "Project not found" }];
+export const meta: Route.MetaFunction = ({ loaderData }) => {
+  if (!loaderData) {
+    return [{ title: "Not found" }];
   }
 
   return [
-    { title: `${data.title}: sory.world` },
-    { name: "description", content: data.title },
+    { title: `${loaderData.title}: sory.world` },
+    { name: "description", content: loaderData.title },
   ];
 };
 
@@ -77,7 +77,6 @@ export default function ProjectPage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
             src={project.image}
-            alt={project.title}
             className="project-image"
           />
         )}

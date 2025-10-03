@@ -13,14 +13,14 @@ export const loader = async ({ params }: Route.LoaderArgs) => {
   return person;
 };
 
-export const meta: Route.MetaFunction = ({ data }) => {
-  if (!data) {
-    return [{ title: "Project not found" }];
+export const meta: Route.MetaFunction = ({ loaderData }) => {
+  if (!loaderData) {
+    return [{ title: "Not found" }];
   }
 
   return [
-    { title: `${data.title}: sory.world` },
-    { name: "description", content: data.title },
+    { title: `${loaderData.title}: sory.world` },
+    { name: "description", content: loaderData.title },
   ];
 };
 
