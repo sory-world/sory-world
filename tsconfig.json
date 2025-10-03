@@ -1,6 +1,7 @@
 {
+  "include": ["**/*", "**/.server/**/*", "**/.client/**/*", ".react-router/types/**/*"],
   "compilerOptions": {
-    "types": ["@remix-run/node", "vite/client"],
+    "types": ["vite/client"],
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
@@ -9,6 +10,8 @@
     "paths": {
       "~/": ["./app/"],
       "~/*": ["./app/*"]
-    }
+    },
+    "rootDirs": [".", "./.react-router/types"],
+    "strict": true
   }
 }

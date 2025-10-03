@@ -1,10 +1,11 @@
-import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
-import { useLoaderData, useNavigate } from "@remix-run/react";
+import type { Route } from "./+types/notes.$note";
+import { useLoaderData, useNavigate } from "react-router";
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect } from "react";
 import { getNoteBySlug } from "~/data/notes";
+import BackButton from "~/components/BackButton";
 
-export const loader = async ({ params }: LoaderFunctionArgs) => {
+export const loader = async ({ params }: Route.LoaderArgs) => {
   const note = getNoteBySlug(params.note);
   if (!note) {
     throw new Response("Not Found", { status: 404 });
@@ -12,7 +13,7 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
   return note;
 };
 
-export const meta: MetaFunction<typeof loader> = ({ data }) => {
+export const meta: Route.MetaFunction = ({ data }) => {
   if (!data) {
     return [{ title: "Project not found" }];
   }
@@ -48,9 +49,7 @@ export default function ProjectPage() {
     <div className="home">
       <motion.div animate={controls} initial={{ opacity: 0 }}>
         <div className="page__bar">
-          <button className="nav__link" onClick={handleBack}>
-            back
-          </button>
+          <BackButton handleBack={handleBack} />
         </div>
         <h2>
           <span className="contrast-text contrast-text--tight">
@@ -58,7 +57,7 @@ export default function ProjectPage() {
           </span>
         </h2>
         <div>
-          {note.description.map((paragraph, index) => (
+          {note.description.map((paragraph: string, index: number) => (
             <p key={`${note.slug}-paragraph-${index}`}>
               <span className="contrast-text">{paragraph}</span>
             </p>

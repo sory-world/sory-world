@@ -1,10 +1,11 @@
-import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
-import { Link, useLoaderData, useNavigate } from "@remix-run/react";
+import type { Route } from "./+types/people.$person";
+import { Link, useLoaderData, useNavigate } from "react-router";
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect } from "react";
 import { getPersonBySlug } from "~/data/people";
+import BackButton from "~/components/BackButton";
 
-export const loader = async ({ params }: LoaderFunctionArgs) => {
+export const loader = async ({ params }: Route.LoaderArgs) => {
   const person = getPersonBySlug(params.person);
   if (!person) {
     throw new Response("Not Found", { status: 404 });
@@ -12,7 +13,7 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
   return person;
 };
 
-export const meta: MetaFunction<typeof loader> = ({ data }) => {
+export const meta: Route.MetaFunction = ({ data }) => {
   if (!data) {
     return [{ title: "Project not found" }];
   }
@@ -48,13 +49,11 @@ export default function ProjectPage() {
     <div className="home">
       <motion.div animate={controls} initial={{ opacity: 0 }}>
         <div className="page__bar">
-          <button className="nav__link" onClick={handleBack}>
-            back
-          </button>
+          <BackButton handleBack={handleBack} />
         </div>
         <h2>{person.title}</h2>
         <div>
-          {person.description.map((paragraph) => (
+          {person.description.map((paragraph: string) => (
             <p key={paragraph.slice(0, 15)}>{paragraph}</p>
           ))}
         </div>

@@ -1,10 +1,11 @@
-import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
-import { useLoaderData, useNavigate } from "@remix-run/react";
+import type { Route } from "./+types/projects.$project";
+import { useLoaderData, useNavigate } from "react-router";
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect } from "react";
 import { getProjectBySlug } from "~/data/projects";
+import BackButton from "~/components/BackButton";
 
-export const loader = async ({ params }: LoaderFunctionArgs) => {
+export const loader = async ({ params }: Route.LoaderArgs) => {
   const project = getProjectBySlug(params.project);
   if (!project) {
     throw new Response("Not Found", { status: 404 });
@@ -12,7 +13,7 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
   return project;
 };
 
-export const meta: MetaFunction<typeof loader> = ({ data }) => {
+export const meta: Route.MetaFunction = ({ data }) => {
   if (!data) {
     return [{ title: "Project not found" }];
   }
@@ -52,15 +53,13 @@ export default function ProjectPage() {
         className="project__content"
       >
         <div className="page__bar">
-          <button className="nav__link" onClick={handleBack}>
-            <span className="contrast-text">back</span>
-          </button>
+          <BackButton handleBack={handleBack} contrast />
         </div>
         <h2>
           <span className="contrast-text">{project.title}</span>
         </h2>
         <div>
-          {project.description.map((paragraph, index) => (
+          {project.description.map((paragraph: string, index: number) => (
             <p key={`${project.slug}-paragraph-${index}`}>
               <span className="contrast-text">{paragraph}</span>
             </p>

@@ -1,9 +1,9 @@
-import type { MetaFunction } from "@remix-run/node";
-import { useNavigate } from "@remix-run/react";
+import type { Route } from "./+types/info";
+import { useNavigate } from "react-router";
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect } from "react";
 
-export const meta: MetaFunction = () => {
+export const meta: Route.MetaFunction = () => {
   return [
     { title: `info: sory.world` },
     { name: "description", content: "info" },
@@ -41,14 +41,12 @@ export default function ProjectPage() {
       <motion.div animate={controls} initial={{ opacity: 0 }}>
         <div className="page__bar">
           <button className="nav__link" onClick={handleBack}>
-            back
+            {`<<<`}
           </button>
         </div>
         <div>
           {paragraphs.map((text) => (
-            <p key={text.slice(0, 20)}>
-              <span className="contrast-text">{text}</span>
-            </p>
+            <p key={text.slice(0, 20)}>{text}</p>
           ))}
         </div>
       </motion.div>

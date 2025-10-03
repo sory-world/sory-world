@@ -235,7 +235,7 @@ p {
   position: relative;
   display: inline-flex;
   align-items: center;
-  padding: 0.4rem 0.4rem 0.5rem;
+  padding: 0.3rem 0.4rem 0.5rem;
   isolation: isolate;
   text-decoration: inherit;
   color: inherit;

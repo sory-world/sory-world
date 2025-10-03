@@ -6,7 +6,7 @@ import {
   useCallback,
   type KeyboardEvent,
 } from "react";
-import { Link, useLocation } from "@remix-run/react";
+import { Link, useLocation } from "react-router";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { NAV } from "~/data/links";
 import {
@@ -149,7 +149,7 @@ function DesktopNav({ data }: { data: NavData }) {
         <ul className="nav__page-list" aria-label="Main Navigation Pages">
           {pages.map((p) => (
             <li key={p.to} className="nav__page-item">
-              <Link to={p.to} prefetch="intent" className="nav__link">
+              <Link to={p.to} className="nav__link">
                 {p.name}
               </Link>
             </li>
@@ -179,7 +179,7 @@ function DesktopNav({ data }: { data: NavData }) {
                 variants={itemVariants}
                 layout
               >
-                <Link className="nav__link" to={link.to} prefetch="intent">
+                <Link className="nav__link" to={link.to}>
                   {link.name}
                 </Link>
               </motion.div>
@@ -261,11 +261,7 @@ export function MobileNav({ data }: { data: NavData }) {
                             className="nav__submenu-item"
                             variants={itemVars}
                           >
-                            <Link
-                              className="nav__link"
-                              to={link.to}
-                              prefetch="intent"
-                            >
+                            <Link className="nav__link" to={link.to}>
                               {link.name}
                             </Link>
                           </motion.li>
@@ -282,7 +278,7 @@ export function MobileNav({ data }: { data: NavData }) {
       <ul className="nav__page-list" aria-label="Pages">
         {pages.map((p) => (
           <li key={p.to} className="nav__page-item">
-            <Link to={p.to} prefetch="intent" className="nav__link">
+            <Link to={p.to} className="nav__link">
               {p.name}
             </Link>
           </li>
