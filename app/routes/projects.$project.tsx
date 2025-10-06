@@ -1,5 +1,5 @@
 import type { Route } from "./+types/projects.$project";
-import { useLoaderData, useNavigate } from "react-router";
+import { Link, useLoaderData, useNavigate } from "react-router";
 import { motion, useAnimationControls } from "framer-motion";
 import { useEffect } from "react";
 import { getProjectBySlug } from "~/data/projects";
@@ -70,6 +70,11 @@ export default function ProjectPage() {
           <p>
             <span className="contrast-text">{project.date}</span>
           </p>
+          {project.links?.map((link) => (
+          <Link className="body__link" key={link.name} to={link.to} target="_blank">
+            <span className="contrast-text">{link.name}</span>
+          </Link>
+        ))}
         </div>
         {project.image && (
           <motion.img

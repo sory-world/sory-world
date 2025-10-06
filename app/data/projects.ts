@@ -4,9 +4,19 @@ import { getPageDataBySlug } from "./getPageDataBySlug";
 type ProjectData = PageData & {
   date?: string;
   image?: string;
+  links?: { name: string; to: string }[];
 };
 
 export const projects: Record<string, ProjectData> = {
+  "ways-of-knowing": {
+    slug: "ways-of-knowing",
+    title: "ways of knowing",
+    description: [
+      "Ways of Knowing / كيف منعرف is an experimental immersive platform for mapping Palestinian knowledge through storytelling, memory, and place. focusing on generational exchange, the project gathers stories, practices, and visions of the past, present, and future.",
+    ],
+    date: "IN DEVELOPMENT",
+    image: "/wok.png",
+  },
   "everything-is-beautiful-and-nothing-hurts": {
     slug: "everything-is-beautiful-and-nothing-hurts",
     title: "everything is beautiful and nothing hurts",
@@ -15,6 +25,12 @@ export const projects: Record<string, ProjectData> = {
     ],
     date: "2023",
     image: "/ebnh.jpg",
+    links: [
+      {
+        name: "teaser",
+        to: "https://vimeo.com/manage/videos/760388746",
+      },
+    ],
   },
   "one-night-on-saturn": {
     slug: "one-night-on-saturn",
@@ -22,6 +38,12 @@ export const projects: Record<string, ProjectData> = {
     description: ["two boys come down beside the river."],
     date: "2019 / 2024",
     image: "/onos.jpg",
+    links: [
+      {
+        name: "watch",
+        to: "https://vimeo.com/manage/videos/586399410",
+      },
+    ],
   },
   "looking-for-albion-remastered": {
     slug: "looking-for-albion-remastered",
@@ -31,6 +53,12 @@ export const projects: Record<string, ProjectData> = {
     ],
     date: "2025",
     image: "/l4ar.jpg",
+    links: [
+      {
+        name: "watch",
+        to: "https://vimeo.com/manage/videos/695794488",
+      },
+    ],
   },
   "looking-for-albion": {
     slug: "looking-for-albion",
@@ -40,6 +68,12 @@ export const projects: Record<string, ProjectData> = {
     ],
     date: "2018",
     image: "/l4a.jpg",
+    links: [
+      {
+        name: "watch",
+        to: "https://vimeo.com/manage/videos/695794488",
+      },
+    ],
   },
   "young-boy-dancing-group": {
     slug: "young-boy-dancing-group",
@@ -67,6 +101,12 @@ export const projects: Record<string, ProjectData> = {
     ],
     date: "2022",
     image: "/sts.png",
+    links: [
+      {
+        name: "read",
+        to: "https://docs.google.com/document/d/1hBr07L94xMuRVMGDvXX4VxjYQWZ-CJj6dSoqQLpVwqU/edit?usp=sharing",
+      },
+    ],
   },
   yonner: {
     slug: "yonner",
@@ -76,6 +116,12 @@ export const projects: Record<string, ProjectData> = {
     ],
     date: "2021",
     image: "/ynr.png",
+    links: [
+      {
+        name: "watch",
+        to: "https://vimeo.com/manage/videos/531391814/6234aa9f47/privacy",
+      },
+    ],
   },
   zvezda: {
     slug: "zvezda",
@@ -89,6 +135,12 @@ export const projects: Record<string, ProjectData> = {
     description: ["music video for sewage, directed by r seventeen."],
     date: "2022",
     image: "/tyh.png",
+    links: [
+      {
+        name: "watch",
+        to: "https://www.youtube.com/watch?v=IF8vXKzLNlA&ab_channel=Sewage",
+      },
+    ],
   },
   untitled: {
     slug: "untitled",
@@ -98,6 +150,12 @@ export const projects: Record<string, ProjectData> = {
     ],
     date: "2015",
     image: "/utld.png",
+    links: [
+      {
+        name: "watch",
+        to: "https://vimeo.com/manage/videos/164825679",
+      },
+    ],
   },
   "alien-intimacy": {
     slug: "alien-intimacy",
@@ -106,6 +164,12 @@ export const projects: Record<string, ProjectData> = {
       "zanya leaves a life behind to sleep beneath the sleepless screen of an abandoned cinema. the film was made throughout a bitter winter and bright spring in belgrade, during which the filmmakers, an army of waifs and strays, lived in the cinema where it is set. this was our film school. it's not finished yet. we lost our minds and broke our hearts making it. it was, is, a labour of love. alien intimacy established, both positively and negatively, the place from which our visions occur and the techniques by which we put them into practice. in all our subsequent work we are still there, in that haunted, freezing theatre, staring down the blank face of the screen and listening to the snowflakes falling onto the seats. we would love for you to join us.",
     ],
     date: "IN DEVELOPMENT",
+    links: [
+      {
+        name: "watch",
+        to: "https://vimeo.com/manage/videos/164825679",
+      },
+    ],
   },
   Ω: {
     slug: "Ω",
@@ -115,6 +179,12 @@ export const projects: Record<string, ProjectData> = {
     ],
     date: "IN DEVELOPMENT",
     image: "/Ω.png",
+    links: [
+      {
+        name: "watch",
+        to: "https://vimeo.com/manage/videos/530546367",
+      },
+    ],
   },
   nhs: {
     slug: "nhs",
@@ -129,6 +199,12 @@ export const projects: Record<string, ProjectData> = {
     ],
     date: "IN DEVELOPMENT",
     image: "/dl.png",
+    links: [
+      {
+        name: "watch",
+        to: "https://vimeo.com/manage/videos/530546367",
+      },
+    ],
   },
   "in-the-night-darkly": {
     slug: "in-the-night-darkly",

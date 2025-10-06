@@ -53,11 +53,13 @@ export default function ProjectPage() {
         </div>
         <h2>{note.title}</h2>
         <div>
-          {note.description.map((paragraph: string, index: number) => (
-            <p key={`${note.slug}-paragraph-${index}`}>
-              <span className="contrast-text">{paragraph}</span>
-            </p>
-          ))}
+          {note.description.map((paragraph: string, index: number) =>
+            paragraph === "br" ? (
+              <br key={`${note.slug}-paragraph-${index}`} />
+            ) : (
+              <p key={`${note.slug}-paragraph-${index}`}>{paragraph}</p>
+            )
+          )}
         </div>
       </motion.div>
     </div>

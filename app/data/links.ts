@@ -3,6 +3,7 @@ import { NavData } from "~/types";
 export const NAV: NavData = {
   groups: {
     projects: [
+      { name: "ways of knowing", to: "/projects/ways-of-knowing" },
       {
         name: "everything is beautiful and nothing hurts",
         to: "/projects/everything-is-beautiful-and-nothing-hurts",
@@ -31,21 +32,31 @@ export const NAV: NavData = {
     ],
     connect: [
       { name: "email", to: "mailto:info@sory.world" },
-      { name: "instagram", to: "https://www.instagram.com/sory.world/" },
-      { name: "patreon", to: "https://www.patreon.com/" },
+      { name: "instagram", to: "https://www.instagram.com/sory.world" },
+      // { name: "patreon", to: "https://www.patreon.com/" },
     ],
     people: [
       { name: "r seventeen", to: "/people/r-seventeen" },
       { name: "soko silberbach", to: "/people/soko-silberbach" },
       { name: "(patrick) lucy", to: "/people/patrick-lucy" },
+      { name: "matt congdon", to: "/people/matt-congdon" },
+      { name: "toby elwes", to: "/people/toby-elwes" },
+      { name: "ben woodward", to: "/people/ben-woodward" },
+      { name: "clemente lohr", to: "/people/clemente-lohr" },
     ],
     notes: [
-      { name: "cinema and dreamz", to: "/notes/cinema-and-dreamz" },
+      {
+        name: "cinema and dreamz",
+        to: "/notes/cinema-and-dreamz",
+      },
       {
         name: "the hospital and the forest",
         to: "/notes/the-hospital-and-the-forest",
       },
-      { name: "a cautious manifesto", to: "/notes/a-cautious-manifesto" },
+      {
+        name: "a cautious manifesto",
+        to: "/notes/a-cautious-manifesto",
+      },
     ],
   },
   pages: [{ name: "info", to: "/info" }],

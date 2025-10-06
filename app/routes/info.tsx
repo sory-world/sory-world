@@ -16,8 +16,7 @@ export default function ProjectPage() {
 
   const paragraphs = [
     "sory.world is an Event company specialising in media production. we also do funerals and children's parties.",
-    "sory.world was founded in a pub in peckham in 2016 in order to formalise the collaboration between soko silberbach and r seventeen. at the time, silberbach and seventeen were working alongside Lucy on Looking for Albion, a post brexit film about a man looking for a perfectly green perfectly square field. shortly after, r seventeen and lucy moved into Zvezda, an abandoned cinema in belgrade, to make a film in which silberbach stars as a vampire who sleeps beneath the screen. since then, sory.world has become a catalyst for art production.",
-    "sory.world also houses the cinematic, philosophical and literary output of r seventeen and lucy, a writer/director duo interested in world-building, un(reality), marginal storytelling, queering and the dance of truth and fiction.",
+    "sory.world was founded in a pub in Peckham in 2016 in order to formalise the collaboration between Soko Silberbach and R Seventeen. at the time, Silberbach and Seventeen were working alongside Lucy on Looking for Albion, a post brexit film about a man looking for a perfectly green field. shortly after, R Seventeen and Lucy moved into an abandoned cinema in Belgrade where Silberbach stars as a vampire who sleeps beneath the screen. since then, sory.world has become a catalyst for art production.",
   ];
 
   useEffect(() => {

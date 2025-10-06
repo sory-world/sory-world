@@ -179,7 +179,11 @@ function DesktopNav({ data }: { data: NavData }) {
                 variants={itemVariants}
                 layout
               >
-                <Link className="nav__link" to={link.to}>
+                <Link
+                  className="nav__link"
+                  to={link.to}
+                  target={link.to.startsWith("http") ? "_blank" : undefined}
+                >
                   {link.name}
                 </Link>
               </motion.div>
