@@ -32,9 +32,9 @@ export default {
     "/projects/untitled",
     "/projects/alien-intimacy",
     "/projects/Ω",
-    "/projects/nhs",
+    // "/projects/nhs",
     "/projects/deadlunds",
-    "/projects/in-the-night-darkly",
-    "/projects/no-country",
+    // "/projects/in-the-night-darkly",
+    // "/projects/no-country",
   ],
 } satisfies Config;

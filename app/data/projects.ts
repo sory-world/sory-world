@@ -119,7 +119,7 @@ export const projects: Record<string, ProjectData> = {
     links: [
       {
         name: "watch",
-        to: "https://vimeo.com/manage/videos/531391814/6234aa9f47/privacy",
+        to: "https://vimeo.com/531391814",
       },
     ],
   },
@@ -167,7 +167,7 @@ export const projects: Record<string, ProjectData> = {
     links: [
       {
         name: "watch",
-        to: "https://vimeo.com/manage/videos/164825679",
+        to: "https://vimeo.com/530808748/f3286f47be",
       },
     ],
   },
@@ -186,11 +186,11 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  nhs: {
-    slug: "nhs",
-    title: "nhs",
-    description: ["IN DEVELOPMENT"],
-  },
+  // nhs: {
+  //   slug: "nhs",
+  //   title: "nhs",
+  //   description: ["IN DEVELOPMENT"],
+  // },
   deadlunds: {
     slug: "deadlunds",
     title: "deadlunds",
@@ -202,20 +202,20 @@ export const projects: Record<string, ProjectData> = {
     links: [
       {
         name: "watch",
-        to: "https://vimeo.com/manage/videos/530546367",
+        to: "https://www.youtube.com/channel/UCigvmgFK3R2sEwoXiV84TVg/videos",
       },
     ],
   },
-  "in-the-night-darkly": {
-    slug: "in-the-night-darkly",
-    title: "in the night darkly",
-    description: ["IN DEVELOPMENT"],
-  },
-  "no-country": {
-    slug: "no-country",
-    title: "no country",
-    description: ["IN DEVELOPMENT"],
-  },
+  // "in-the-night-darkly": {
+  //   slug: "in-the-night-darkly",
+  //   title: "in the night darkly",
+  //   description: ["IN DEVELOPMENT"],
+  // },
+  // "no-country": {
+  //   slug: "no-country",
+  //   title: "no country",
+  //   description: ["IN DEVELOPMENT"],
+  // },
 };
 
 export function getProjectBySlug(slug: string | undefined) {

@@ -25,10 +25,10 @@ export const NAV: NavData = {
       { name: "untitled", to: "/projects/untitled" },
       { name: "alien intimacy", to: "/projects/alien-intimacy" },
       { name: "Ω", to: "/projects/Ω" },
-      { name: "nhs", to: "/projects/nhs" },
+      // { name: "nhs", to: "/projects/nhs" },
       { name: "deadlunds", to: "/projects/deadlunds" },
-      { name: "in the night darkly", to: "/projects/in-the-night-darkly" },
-      { name: "no country", to: "/projects/no-country" },
+      // { name: "in the night darkly", to: "/projects/in-the-night-darkly" },
+      // { name: "no country", to: "/projects/no-country" },
     ],
     connect: [
       { name: "email", to: "mailto:info@sory.world" },

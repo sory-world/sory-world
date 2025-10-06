@@ -13,14 +13,14 @@ export const projects: Record<string, PersonData> = {
       "R Seventeen is an artist, filmmaker and founder of sory.world. they are based between Mexico City and Europe. they have screened at festivals such as Bolton (2024), the London Short Film Festival (2023) and Tallinn Black Nights Film Festival (2022). they have exhibited in events and galleries such as Art Basel (2021), Carlos Ishikawa (2020) and Hot Wheels Athens (2019), collaborating with artists such as Young Boy Dancing Group, Lloyd Corporation (2020) and Tim Yip (2019)",
     ],
     links: [
-      { name: "@r.seventeen__", to: "https://www.instagram.com/r.seventeen__" },
+      { name: "instagram", to: "https://www.instagram.com/r.seventeen__" },
       { name: "email", to: "mailto:r17@sory.world" },
     ],
   },
   "soko-silberbach": {
     slug: "soko-silberbach",
     title: "soko silberbach",
-    description: [""],
+    description: ["~"],
     links: [{ name: "website", to: "https://sokora.neocities.org" }],
   },
   "patrick-lucy": {
@@ -48,7 +48,7 @@ export const projects: Record<string, PersonData> = {
         to: "https://www.mattcongdon.co.uk",
       },
       {
-        name: "@mattcong",
+        name: "instagram",
         to: "https://www.instagram.com/mattcong",
       },
     ],

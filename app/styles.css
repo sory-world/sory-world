@@ -21,7 +21,7 @@
 }
 @media (max-width: 768px) {
   :root {
-    --font-size-links: 19px;
+    --font-size-links: 20px;
     --font-size-text: 15px;
     --font-size-h1: 22px;
     --font-size-h2: 20px;
