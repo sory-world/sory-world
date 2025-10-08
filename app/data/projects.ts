@@ -12,7 +12,8 @@ export const projects: Record<string, ProjectData> = {
     slug: "ways-of-knowing",
     title: "ways of knowing",
     description: [
-      "Ways of Knowing / كيف منعرف is an experimental immersive platform for mapping Palestinian knowledge through storytelling, memory, and place. focusing on generational exchange, the project gathers stories, practices, and visions of the past, present, and future.",
+      "Ways of Knowing / كيف منعرف is an experimental immersive platform for mapping Palestinian knowledge through storytelling, memory, and place.",
+      "focusing on generational exchange, the project gathers stories, practices and visions of the past, present, and future.",
     ],
     date: "IN DEVELOPMENT",
     image: "/wok.png",
@@ -88,7 +89,8 @@ export const projects: Record<string, ProjectData> = {
     slug: "stones-in-hand",
     title: "stones in hand",
     description: [
-      "new Palestinian short film “Stones in hand” directed by Mo'min Swaitat. it is a surreal short film which draws on the artist's experiences as a Palestinian Bedouin who moved from the West Bank to London and their memories of a childhood spent between weddings and intifadas (popular uprisings).",
+      "new Palestinian short film “Stones in hand” directed by Mo'min Swaitat.",
+      "it is a surreal short film which draws on the artist's experiences as a Palestinian Bedouin who moved from the West Bank to London and their memories of a childhood spent between weddings and intifadas (popular uprisings).",
     ],
     date: "Mo'min Swaitat 2021",
     image: "/sih.jpg",
@@ -112,7 +114,8 @@ export const projects: Record<string, ProjectData> = {
     slug: "yonner",
     title: "yonner",
     description: [
-      "with work shut and the city quiet, Ben's decided to go home. made in conjunction with Foreign Body Productions and the Albany in Deptford, as part of their ongoing Open Source Collaborations project.",
+      "with work shut and the city quiet, Ben's decided to go home.",
+      "made in conjunction with Foreign Body Productions and the Albany in Deptford, as part of their ongoing Open Source Collaborations project.",
     ],
     date: "2021",
     image: "/ynr.png",
@@ -126,7 +129,7 @@ export const projects: Record<string, ProjectData> = {
   zvezda: {
     slug: "zvezda",
     title: "zvezda",
-    description: [" documentary about the making of Alien Intimacy."],
+    description: ["documentary about the making of Alien Intimacy."],
     date: "Ioannis Papadakis 2022",
   },
   "take-ur-hand": {
@@ -146,7 +149,7 @@ export const projects: Record<string, ProjectData> = {
     slug: "untitled",
     title: "untitled",
     description: [
-      "driftings of a metal box. The first collaboration between R Seventeen and Lucy.",
+      "driftings of a metal box. the first collaboration between R Seventeen and Lucy.",
     ],
     date: "2015",
     image: "/utld.png",
@@ -161,7 +164,11 @@ export const projects: Record<string, ProjectData> = {
     slug: "alien-intimacy",
     title: "alien intimacy",
     description: [
-      "zanya leaves a life behind to sleep beneath the sleepless screen of an abandoned cinema. the film was made throughout a bitter winter and bright spring in belgrade, during which the filmmakers, an army of waifs and strays, lived in the cinema where it is set. this was our film school. it's not finished yet. we lost our minds and broke our hearts making it. it was, is, a labour of love. alien intimacy established, both positively and negatively, the place from which our visions occur and the techniques by which we put them into practice. in all our subsequent work we are still there, in that haunted, freezing theatre, staring down the blank face of the screen and listening to the snowflakes falling onto the seats. we would love for you to join us.",
+      "zanya leaves a life behind to sleep beneath the sleepless screen of an abandoned cinema.",
+      "the film was made throughout a bitter winter and bright spring in belgrade, during which the filmmakers, an army of waifs and strays, lived in the cinema where it is set.",
+      "this was our film school. it's not finished yet. we lost our minds and broke our hearts making it. it was, is, a labour of love.",
+      "alien intimacy established, both positively and negatively, the place from which our visions occur and the techniques by which we put them into practice.",
+      "in all our subsequent work we are still there, in that haunted, freezing theatre, staring down the blank face of the screen and listening to the snowflakes falling onto the seats. we would love for you to join us.",
     ],
     date: "IN DEVELOPMENT",
     links: [
@@ -175,7 +182,8 @@ export const projects: Record<string, ProjectData> = {
     slug: "Ω",
     title: "Ω",
     description: [
-      "Y is an androgynous humanoid apparently being preserved in a depthless white, virtual space. Frank is an aging man who monitors them from another room. Y dreams of an empty Venice. Frank narrates these dreams. it seems that Frank and Y are the last people left on earth, except for a mysterious figure that begins appearing in Y's dreams.",
+      "Y is an androgynous humanoid apparently being preserved in a depthless white, virtual space. Frank is an aging man who monitors them from another room.",
+      "Y dreams of an empty Venice. Frank narrates these dreams. it seems that Frank and Y are the last people left on earth, except for a mysterious figure that begins appearing in Y's dreams.",
     ],
     date: "IN DEVELOPMENT",
     image: "/Ω.png",

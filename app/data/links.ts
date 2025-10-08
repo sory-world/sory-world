@@ -37,7 +37,6 @@ export const NAV: NavData = {
     ],
     people: [
       { name: "r seventeen", to: "/people/r-seventeen" },
-      { name: "soko silberbach", to: "/people/soko-silberbach" },
       { name: "(patrick) lucy", to: "/people/patrick-lucy" },
       { name: "matt congdon", to: "/people/matt-congdon" },
       { name: "toby elwes", to: "/people/toby-elwes" },

@@ -57,6 +57,7 @@ export default function ProjectPage() {
             <p key={paragraph.slice(0, 15)}>{paragraph}</p>
           ))}
         </div>
+        <br />
         {person.links?.map((link) => (
           <Link className="body__link" key={link.name} to={link.to} target="_blank">
             {link.name}

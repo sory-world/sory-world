@@ -11,7 +11,6 @@ export default {
     "/notes/a-cautious-manifesto",
     // people
     "/people/r-seventeen",
-    "/people/soko-silberbach",
     "/people/patrick-lucy",
     "/people/matt-congdon",
     "/people/toby-elwes",
