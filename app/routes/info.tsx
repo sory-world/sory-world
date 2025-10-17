@@ -7,6 +7,7 @@ export const meta: Route.MetaFunction = () => {
   return [
     { title: `info: sory.world` },
     { name: "description", content: "info" },
+    { name: "viewport", content: "width=device-width,initial-scale=1" },
   ];
 };
 

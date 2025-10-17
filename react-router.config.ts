@@ -20,7 +20,6 @@ export default {
     "/projects/ways-of-knowing",
     "/projects/everything-is-beautiful-and-nothing-hurts",
     "/projects/one-night-on-saturn",
-    "/projects/looking-for-albion-remastered",
     "/projects/looking-for-albion",
     "/projects/young-boy-dancing-group",
     "/projects/stones-in-hand",

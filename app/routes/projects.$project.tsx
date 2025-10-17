@@ -15,12 +15,16 @@ export const loader = async ({ params }: Route.LoaderArgs) => {
 
 export const meta: Route.MetaFunction = ({ loaderData }) => {
   if (!loaderData) {
-    return [{ title: "Not found" }];
+    return [
+      { title: "Not found" },
+      { name: "viewport", content: "width=device-width,initial-scale=1" },
+    ];
   }
 
   return [
     { title: `${loaderData.title}: sory.world` },
     { name: "description", content: loaderData.title },
+    { name: "viewport", content: "width=device-width,initial-scale=1" },
   ];
 };
 

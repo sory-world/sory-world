@@ -9,10 +9,6 @@ export const NAV: NavData = {
         to: "/projects/everything-is-beautiful-and-nothing-hurts",
       },
       { name: "one night on saturn", to: "/projects/one-night-on-saturn" },
-      {
-        name: "looking for albion remastered",
-        to: "/projects/looking-for-albion-remastered",
-      },
       { name: "looking for albion", to: "/projects/looking-for-albion" },
       {
         name: "young boy dancing group",
@@ -20,6 +16,7 @@ export const NAV: NavData = {
       },
       { name: "stones in hand", to: "/projects/stones-in-hand" },
       { name: "slicing the scry", to: "/projects/slicing-the-scry" },
+      { name: "take **ur hand", to: "/projects/take-ur-hand" },
       { name: "yonner", to: "/projects/yonner" },
       { name: "zvezda", to: "/projects/zvezda" },
       { name: "untitled", to: "/projects/untitled" },

@@ -12,8 +12,9 @@ export const projects: Record<string, ProjectData> = {
     slug: "ways-of-knowing",
     title: "ways of knowing",
     description: [
-      "Ways of Knowing / كيف منعرف is an experimental immersive platform for mapping Palestinian knowledge through storytelling, memory, and place.",
-      "focusing on generational exchange, the project gathers stories, practices and visions of the past, present, and future.",
+      "Ways of Knowing / كيف منعرف is an experimental platform for mapping Palestinian knowledge through storytelling, memory and place. focusing on generational exchange, the project gathers stories, practices and visions of the past, present and future.",
+      "as a web experience and immersive exhibition space it uses a combination of 3D and 2D mapping technology, audio, video and novel archival techniques to situate audiences within the landscapes shaped by these stories. alongside the platform, the project exists as the development of an enactive, participatory research methodology, treating the archive not as a static repository but an ongoing relation between witness and record.",
+      "it is a collaboration with various Palestinian arts and culture organisations, creative facilitators, communities and friends.",
     ],
     date: "IN DEVELOPMENT",
     image: "/wok.png",
@@ -46,33 +47,22 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  "looking-for-albion-remastered": {
-    slug: "looking-for-albion-remastered",
-    title: "looking for albion remastered",
-    description: [
-      "post-rave, post-brexit, post-internet hyperscape in which two boys, sharing a suit made from torn up, WW2 era British flags, slip in and out of reality in the search for a perfectly square, perfectly green field.",
-    ],
-    date: "2025",
-    image: "/l4ar.jpg",
-    links: [
-      {
-        name: "watch",
-        to: "https://vimeo.com/manage/videos/695794488",
-      },
-    ],
-  },
   "looking-for-albion": {
     slug: "looking-for-albion",
     title: "looking for albion",
     description: [
       "post-rave, post-brexit, post-internet hyperscape in which two boys, sharing a suit made from torn up, WW2 era British flags, slip in and out of reality in the search for a perfectly square, perfectly green field.",
     ],
-    date: "2018",
-    image: "/l4a.jpg",
+    date: "original 2017, remastered 2024",
+    image: "/l4ar.jpg",
     links: [
       {
-        name: "watch",
-        to: "https://vimeo.com/manage/videos/695794488",
+        name: "original",
+        to: "https://vimeo.com/soryworld/l4a",
+      },
+      {
+        name: "remastered",
+        to: "https://vimeo.com/soryworld/l4ar",
       },
     ],
   },
@@ -84,16 +74,6 @@ export const projects: Record<string, ProjectData> = {
     ],
     date: "2023",
     image: "/ybdg.png",
-  },
-  "stones-in-hand": {
-    slug: "stones-in-hand",
-    title: "stones in hand",
-    description: [
-      "new Palestinian short film “Stones in hand” directed by Mo'min Swaitat.",
-      "it is a surreal short film which draws on the artist's experiences as a Palestinian Bedouin who moved from the West Bank to London and their memories of a childhood spent between weddings and intifadas (popular uprisings).",
-    ],
-    date: "Mo'min Swaitat 2021",
-    image: "/sih.jpg",
   },
   "slicing-the-scry": {
     slug: "slicing-the-scry",
@@ -110,21 +90,15 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  yonner: {
-    slug: "yonner",
-    title: "yonner",
+  "stones-in-hand": {
+    slug: "stones-in-hand",
+    title: "stones in hand",
     description: [
-      "with work shut and the city quiet, Ben's decided to go home.",
-      "made in conjunction with Foreign Body Productions and the Albany in Deptford, as part of their ongoing Open Source Collaborations project.",
+      "new Palestinian short film “Stones in hand” directed by Mo'min Swaitat.",
+      "it is a surreal short film which draws on the artist's experiences as a Palestinian Bedouin who moved from the West Bank to London and their memories of a childhood spent between weddings and intifadas (popular uprisings).",
     ],
-    date: "2021",
-    image: "/ynr.png",
-    links: [
-      {
-        name: "watch",
-        to: "https://vimeo.com/531391814",
-      },
-    ],
+    date: "Mo'min Swaitat, 2021",
+    image: "/sih.jpg",
   },
   zvezda: {
     slug: "zvezda",
@@ -142,6 +116,22 @@ export const projects: Record<string, ProjectData> = {
       {
         name: "watch",
         to: "https://www.youtube.com/watch?v=IF8vXKzLNlA&ab_channel=Sewage",
+      },
+    ],
+  },
+  yonner: {
+    slug: "yonner",
+    title: "yonner",
+    description: [
+      "with work shut and the city quiet, Ben's decided to go home.",
+      "made in conjunction with Foreign Body Productions and the Albany in Deptford, as part of their ongoing Open Source Collaborations project.",
+    ],
+    date: "2021",
+    image: "/ynr.png",
+    links: [
+      {
+        name: "watch",
+        to: "https://vimeo.com/531391814",
       },
     ],
   },

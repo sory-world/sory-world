@@ -20,7 +20,7 @@ export const projects: Record<string, PersonData> = {
   },
   "patrick-lucy": {
     slug: "patrick-lucy",
-    title: "patrick lucy",
+    title: "(patrick) lucy",
     description: [
       "Lucy is a writer, occasional actor and para-academic interested in aesthetic and political philosophy.",
     ],
