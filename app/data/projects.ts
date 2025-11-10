@@ -8,8 +8,8 @@ type ProjectData = PageData & {
 };
 
 export const projects: Record<string, ProjectData> = {
-  "ways-of-knowing": {
-    slug: "ways-of-knowing",
+  "wok": {
+    slug: "wok",
     title: "ways of knowing",
     description: [
       "Ways of Knowing / كيف منعرف is an experimental platform for mapping Palestinian knowledge through storytelling, memory and place. focusing on generational exchange, the project gathers stories, practices and visions of the past, present and future.",
@@ -19,8 +19,8 @@ export const projects: Record<string, ProjectData> = {
     date: "IN DEVELOPMENT",
     image: "/wok.png",
   },
-  "everything-is-beautiful-and-nothing-hurts": {
-    slug: "everything-is-beautiful-and-nothing-hurts",
+  "ebnh": {
+    slug: "ebnh",
     title: "everything is beautiful and nothing hurts",
     description: [
       "queer, post-romantic, low energy sci-fi film where two lovers try to connect in an underwater city.",
@@ -34,8 +34,8 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  "one-night-on-saturn": {
-    slug: "one-night-on-saturn",
+  "onos": {
+    slug: "onos",
     title: "one night on saturn",
     description: ["two boys come down beside the river."],
     date: "2019 / 2024",
@@ -47,8 +47,8 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  "looking-for-albion": {
-    slug: "looking-for-albion",
+  "l4a": {
+    slug: "l4a",
     title: "looking for albion",
     description: [
       "post-rave, post-brexit, post-internet hyperscape in which two boys, sharing a suit made from torn up, WW2 era British flags, slip in and out of reality in the search for a perfectly square, perfectly green field.",
@@ -66,8 +66,8 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  "young-boy-dancing-group": {
-    slug: "young-boy-dancing-group",
+  "lbdg": {
+    slug: "lbdg",
     title: "young boy dancing group",
     description: [
       "collaboration with Young Boy Dancing Group and Evita Manji.",
@@ -75,8 +75,8 @@ export const projects: Record<string, ProjectData> = {
     date: "2023",
     image: "/ybdg.png",
   },
-  "slicing-the-scry": {
-    slug: "slicing-the-scry",
+  "sts": {
+    slug: "sts",
     title: "slicing the scry",
     description: [
       "noise performance at Tom Hardwick-Allan's exhibition Scrying the Slice, to which sory.world contributed a text by Lucy, read by Georgie Edmonds.",
@@ -90,8 +90,8 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  "stones-in-hand": {
-    slug: "stones-in-hand",
+  "sih": {
+    slug: "sih",
     title: "stones in hand",
     description: [
       "new Palestinian short film “Stones in hand” directed by Mo'min Swaitat.",
@@ -100,14 +100,14 @@ export const projects: Record<string, ProjectData> = {
     date: "Mo'min Swaitat, 2021",
     image: "/sih.jpg",
   },
-  zvezda: {
+  zvda: {
     slug: "zvezda",
     title: "zvezda",
     description: ["documentary about the making of Alien Intimacy."],
     date: "Ioannis Papadakis 2022",
   },
-  "take-ur-hand": {
-    slug: "take-ur-hand",
+  "tyh": {
+    slug: "tyh",
     title: "take **ur hand",
     description: ["music video for sewage, directed by r seventeen."],
     date: "2022",
@@ -119,8 +119,8 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  yonner: {
-    slug: "yonner",
+  ynr: {
+    slug: "ynr",
     title: "yonner",
     description: [
       "with work shut and the city quiet, Ben's decided to go home.",
@@ -135,8 +135,8 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  untitled: {
-    slug: "untitled",
+  utld: {
+    slug: "utld",
     title: "untitled",
     description: [
       "driftings of a metal box. the first collaboration between R Seventeen and Lucy.",
@@ -150,8 +150,8 @@ export const projects: Record<string, ProjectData> = {
       },
     ],
   },
-  "alien-intimacy": {
-    slug: "alien-intimacy",
+  "ai": {
+    slug: "ai",
     title: "alien intimacy",
     description: [
       "zanya leaves a life behind to sleep beneath the sleepless screen of an abandoned cinema.",
@@ -189,8 +189,8 @@ export const projects: Record<string, ProjectData> = {
   //   title: "nhs",
   //   description: ["IN DEVELOPMENT"],
   // },
-  deadlunds: {
-    slug: "deadlunds",
+  dl: {
+    slug: "dl",
     title: "deadlunds",
     description: [
       "the poet Leighton Redman returns to his homeland for inspiration and to see his parents. he finds neither.",
